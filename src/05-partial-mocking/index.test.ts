@@ -20,7 +20,6 @@ describe('partial mocking', () => {
 
   afterEach(() => {
     log.mockRestore();
-    log.mockClear();
   });
 
   afterAll(() => {
