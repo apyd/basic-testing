@@ -31,11 +31,11 @@ describe('simpleCalculator tests', () => {
 
   test('should return null for invalid action', () => {
     expect.assertions(1);
-    expect(simpleCalculator({ a: 1, b: 2, action: undefined })).toBe(null);
+    expect(simpleCalculator({ a: 1, b: 2, action: undefined })).toBeNull();
   });
 
   test('should return null for invalid arguments', () => {
     expect.assertions(1);
-    expect(simpleCalculator({ a: '2', b: '4', action: Action.Add })).toBe(null);
+    expect(simpleCalculator({ a: '2', b: '4', action: Action.Add })).toBeNull();
   });
 });
